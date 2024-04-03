@@ -8,11 +8,11 @@ class Date {
         explicit Date(int d, int m, int y):
         day{d}, month{m}, year{y} {
             if(y>= 1900 && y <=2050) {
-                    month = m;
-                }
-            else {
-                    month = 1900;
-                }
+                    year = y;
+            }
+            if(m >= 1 && m <= 12) {
+                month = m;
+            }
         }
         bool isLeapYear() const{
             if (!year%4 && year%100){
@@ -53,8 +53,8 @@ class Date {
     }
     private:
         int day;
-        int month;
-        int year;
+        int month{1};
+        int year{1900};
 
 
 
@@ -62,3 +62,24 @@ class Date {
 /*Todos los años bisiestos son divisibles entre 4. Aquellos años que son divisibles entre 4, pero no entre 100, 
 son bisiestos. Los años que son divisibles entre 100, pero no entre 400, no son bisiestos. 
 Sin embargo, los años divisibles entre 100 y entre 400 sí que son bisiestos.*/
+
+#include <iostream>
+2
+3 class Date {
+4 public:
+5 explicit Date(int d, int m, int y) : day{d}, year{y} {
+if(m >= 1 && m <= 12) {
+ month = m;
+}
+9 }
+10 void setDay(int d) {
+11 day = d;
+12 }
+13 void setMonth(int m) {
+14 if(m >= 1 && m <= 12) {
+15 month = m;
+16 }
+17 }
+18 void setYear(int y) {
+19 year = y;
+20 }

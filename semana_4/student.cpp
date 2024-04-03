@@ -37,9 +37,9 @@ int main(){
         cout<<"El estudiante 1: "<<estudiante1.getName()<<" es menor de edad."<<endl;
 
     if(estudiante2.isOlder())
-        cout<<"\nEl estudiante 2: "<<estudiante2.getName()<<" es mayor."<<endl;
+        cout<<"\nEl estudiante 2: "<<estudiante2.getName()<<" es mayor de edad."<<endl;
     else
-        cout<<"El estudiante 2: "<<estudiante2.getName()<<" es menor."<<endl;
+        cout<<"El estudiante 2: "<<estudiante2.getName()<<" es menor de edad."<<endl;
 }
 
 // a) Complete el constructor de la clase
