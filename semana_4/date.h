@@ -17,27 +17,31 @@ class Date {
                 month = m;
             else
                 month = 1;
+            
+            if (d>=1){
+                switch(month) {
+                    case 2:
+                        if (d>=1){
+                            if (isLeapYear() && d==29)
+                                day = d;
+                            else if (!isLeapYear() && d <=28)
+                                day = d;
+                        }
+                        break;
 
-            switch(month) {
-                case 2:
-                    if (d>=1){
-                        if (isLeapYear() && d==29)
-                            day = d;
-                        else if (!isLeapYear() && d <=28)
-                            day = d;
-                    }
-                    break;
+                    case 4: case 6: case 9: case 11:
+                        if (d > 30)
+                            day=1;
+                        break;
 
-                case 4: case 6: case 9: case 11:
-                    if (d > 30)
-                        day=1;
-                    break;
-
-                default:
-                    if (d > 31)
-                        day=1;
-                    break;
-            }   
+                    default:
+                        if (d > 31)
+                            day=1;
+                        break;
+                }
+            }
+            else
+                day = 1;  
         }
 
         bool isLeapYear() const{
@@ -65,27 +69,30 @@ class Date {
         }
 
         void setDay(int d){
-            switch(month) {
-                case 2:
-                    if (d>=1){
-                        if (isLeapYear() && d==29)
-                            day = d;
-                        else if (!isLeapYear() && d <=28)
-                            day = d;
-                    }
-                    break;
+            if (d>=1){
+                switch(month) {
+                    case 2:
+                        if (d>=1){
+                            if (isLeapYear() && d==29)
+                                day = d;
+                            else if (!isLeapYear() && d <=28)
+                                day = d;
+                        }
+                        break;
 
-                case 4: case 6: case 9: case 11:
-                    if (d > 30)
-                        day=1;
-                    break;
+                    case 4: case 6: case 9: case 11:
+                        if (d > 30)
+                            day=1;
+                        break;
 
-                default:
-                    if (d > 31)
-                        day=1;
-                    break;
-
+                    default:
+                        if (d > 31)
+                            day=1;
+                        break;
+                }
             }
+            else
+                day = 1; 
         }
 
         void setMonth(int m){
