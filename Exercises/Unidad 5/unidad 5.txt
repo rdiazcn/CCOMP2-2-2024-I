@@ -1,0 +1,228 @@
+7.  (Find the Smallest Value) Write an application that finds
+    the smallest of several integers. Assume that the first value
+    read specifies the number of values to input from the user.
+
+8. (Calculating the Product of Odd Integers) Write an
+    application that calculates the product of the odd integers from
+    1 to 15.
+
+9.  (Factorials) Factorials are used frequently in probability
+    problems. The factorial of a positive integer n (written n! and
+    pronounced “n factorial”) is equal to the product of the positive
+    integers from 1 to n. Write an application that calculates the
+    factorials of 1 through 20. Use type long. Display the results in
+    tabular format. What difficulty might prevent you from
+    calculating the factorial of 100?
+
+10. (Modified Compound-Interest Program) Modify the
+    compound-interest application of Fig. 5.6 to repeat its steps for
+    interest rates of 5%, 6%, 7%, 8%, 9% and 10%. Use a for loop
+    to vary the interest rate.
+
+11. (Triangle-Printing Program) Write an application that
+    displays the following patterns separately, one below the other.
+    Use for loops to generate the patterns. All asterisks (*) should
+    be printed by a single statement of the form 
+    cout << '*'; which
+    causes the asterisks to print side by side. A statement of the form 
+    cout << '\n'; can be used to move to the next line. A
+    statement of the form cout << ' '; can be used to display a
+    space for the last two patterns. There should be no other output
+    statements in the program. [Hint: The last two patterns require
+    that each line begin with an appropriate number of blank
+    spaces.]
+        A.  
+            *
+            **
+            ***
+            ****
+            *****
+            ******
+            *******
+            ********
+            *********
+            **********
+        B.  
+            **********
+            *********
+            ********
+            *******
+            ******
+            *****
+            ****
+            ***
+            **
+            *
+        C.  
+            **********
+             *********
+              ********
+               *******
+                ******
+                 *****
+                  ****
+                   ***
+                    **
+                     *
+        D.  
+                     *
+                    **
+                   ***
+                  ****
+                 *****
+                ******
+               *******
+              ********
+             *********
+            **********
+    
+12. (Bar-Chart Printing Program) One interesting application
+    of computers is to display graphs and bar charts. Write an
+    application that reads five numbers between 1 and 30. For
+    each number that’s read, your program should display the
+    same number of adjacent asterisks. For example, if your
+    program reads the number 7, it should display 
+    *******. Display the bars of asterisks after you read all five numbers.
+
+13. (Calculating Sales) An online retailer sells five products
+    whose retail prices are as follows: Product 1, $2.98; product 2,
+    $4.50; product 3, $9.98; product 4, $4.49 and product 5, $6.87.
+    Write an application that reads a series of pairs of numbers as
+    follows:
+        A. product number
+        B. quantity sold
+    Your program should use a 
+    switch statement to determine the
+    retail price for each product. It should calculate and display the
+    total retail value of all products sold. Use a sentinel-controlled
+    loop to determine when the program should stop looping and
+    display the final results.
+
+15. (Calculating the Value of π) Calculate the value of π
+    from the infinite series
+    Print a table that shows the value of π approximated by
+    computing the first 200,000 terms of this series. How many
+    terms do you have to use before you first get a value that
+    begins with 3.14159
+
+16. (Pythagorean Triples) A right triangle can have sides
+    whose lengths are all integers. The set of three integer values
+    for the lengths of the sides of a right triangle is called a
+    Pythagorean triple. The lengths of the three sides must satisfy
+    the relationship that the sum of the squares of two of the sides
+    is equal to the square of the hypotenuse. Write an application
+    that displays a table of the Pythagorean triples for side1, 
+    side2 and the hypotenuse, all no larger than 500. Use a triple-nested
+    for loop that tries all possibilities. This is an example of “brute
+    force” computing. You’ll learn in more advanced computer
+    science courses that for many interesting problems there’s no
+    known algorithmic approach other than using sheer brute force.
+
+17. (Modified Triangle-Printing Program) Modify Exercise
+    11 to combine your code from the four separate triangles of
+    asterisks such that all four patterns print side by side. [Hint:
+    Make clever use of nested 
+    for loops.]
+
+18. (De Morgan’s Laws) In this chapter, we discussed the
+    logical operators &&, || and !. De Morgan’s laws can
+    sometimes make it more convenient for us to express a logical
+    expression. These laws state that the expression 
+    !(condition1 && condition2) is logically equivalent to the expression
+    (!condition1 || !condition2). Also, the expression 
+    !(condition1 || condition2) is logically equivalent to the
+    expression (!condition1 && !condition2). Use De Morgan’s
+    laws to write equivalent expressions for each of the following,
+    then write an application to show that both the original
+    expression and the new expression in each case produce the
+    same value:
+        A. !(x < 5) && !(y >= 7)
+        B. !(a == b) || !(g != 5)
+        C. !((x <= 8) && (y > 4))
+        D. !((i > 4) || (j <= 6))
+
+19. (Diamond-Printing Program) Write an application that
+    prints the following diamond shape. You may use output
+    statements that print a single asterisk (*), a single space or a
+    single new-line character. Maximize your use of iteration (with
+    nested for statements), and minimize the number of output
+    statements.
+          *
+         ***
+        *****
+       *******
+      *********
+       *******
+        *****
+         ***
+          *
+20. (Modified Diamond-Printing Program) Modify the
+    application you wrote in Exercise 19 to read an odd number
+    in the range 1 to 19 to specify the number of rows in the
+    diamond. Your program should then display a diamond of the
+    appropriate size.
+
+24. (“The Twelve Days of Christmas” Song) Write an
+    application that uses iteration and 
+    switch statements to print the song “The Twelve Days of Christmas.” One 
+    switch statement should be used to print the day (“first,” “second,” and so on). 
+    A separate switch statement should be used to print the remainder of each verse. 
+    Visit the website en.wikipedia.org/wiki/The_Twelve_Days_ of_Christmas_(song) for
+    the lyrics of the song.
+
+25. (Peter Minuit Problem) Legend has it that, in 1626, Peter
+    Minuit purchased Manhattan Island for $24.00 in barter. Did he
+    make a good investment? To answer this question, modify the
+    compound-interest program of Fig. 5.6 to begin with a principal
+    of $24.00 and to calculate the amount of interest on deposit if
+    that money had been kept on deposit until this year (e.g., 390
+    years through 2016). Place the for loop that performs the
+    compound-interest calculation in an outer 
+    for loop that varies the interest rate from 5% to 10% to observe the wonders of
+    compound interest.
+
+26. (DollarAmount Constructor with Two Parameters)
+    Enhance class DollarAmount (Fig. 5.8) with a constructor that
+    receives two parameters representing the whole number of
+    dollars and the whole number of cents. Use these to calculate
+    and store in the data member amount the total number of
+    pennies. Test the class with your new constructor
+
+27. (DollarAmount Arithmetic) Enhance class DollarAmount
+    from Exercise 26 with a divide member function that
+    receives an int parameter, divides the data member 
+    amount by that value and stores the result in the data member. Use
+    rounding techniques similar to the addInterest member
+    function. Test your new divide member function.
+
+28. (DollarAmount with Banker’s Rounding) The DollarAmount class’s 
+    addInterest member function uses the biased half-up rounding technique 
+    in which fractional amounts of .1, .2, .3 and .4 round down, and .5, .6, 
+    .7, .8 and .9 round up. In this technique, four values round down and five round up.
+    Banker’s rounding fixes this problem by rounding .5 to the nearest even integer—e.g., 
+    0.5 rounds to 0, 1.5 and 2.5 round to 2, 3.5 and 4.5 round to 4, etc. Enhance class 
+    DollarAmount from Exercise 27 by reimplementing addInterest to use
+    banker’s rounding, then retest the compound-interest program.
+
+29. (DollarAmount with dollars and cents Data Members) Reimplement class 
+    DollarAmount from Exercise 5.32 to store data members dollars and 
+    cents, rather than amount. Modify the body of each constructor and 
+    member function appropriately to manipulate the dollars and cents data
+    members.
+
+30. (Account Class That Stores a DollarAmount) Upgrade the Account class 
+    from Exercise 3.9 to define its balance data member as an object of class 
+    DollarAmount from Exercise 29. Reimplement the bodies of class Account’s 
+    constructor and member functions accordingly.
+
+31. (Displaying the Interest Rate in the DollarAmount Example) Enhance the 
+    main program in Fig. 5.7 to display the interest rate based on the two 
+    integers entered by the user. For example, if the user enters 2 and 100, 
+    display 2.0%, and if the user enters 2015 and 100000, display 2.015%.
+
+32. (Showing That double Values Are Approximate) Create
+    a program that assigns 123.02 to a double variable, then
+    displays the variable’s value with many digits of precision to the
+    right of the decimal point. Which precision first shows you the
+    representational error of storing 123.02 in a 
+    double variable?

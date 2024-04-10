@@ -1,0 +1,120 @@
+ 10.    (Arithmetic) Write a program that asks the user to enter
+        two numbers, obtains the two numbers from the user and prints
+        the sum, product, difference, and quotient of the two numbers
+
+ 11.    (Printing) Write a program that prints the numbers 1 to 4
+        on the same line with each pair of adjacent numbers separated
+        by one space. Do this several ways:
+            A. Using one statement with one stream insertion operator.
+            B. Using one statement with four stream insertion operators.
+            C. Using four statements
+
+ 12.    (Comparing Integers) Write a program that asks the user
+        to enter two integers, obtains the numbers from the user, then
+        prints the larger number followed by the words  "is larger." If
+        the numbers are equal, print the message "These numbers are
+        equal."
+
+ 13.    (Arithmetic, Smallest and Largest) Write a program that
+        inputs three integers from the keyboard and prints the sum,
+        average, product, smallest and largest of these numbers. The
+        screen dialog should appear as follows:
+            Input three different integers: 13 27 14
+            Sum is 54
+            Average is 18
+            Product is 4914
+            Smallest is 13
+            Largest is 27
+
+ 14.    (Diameter, Circumference and Area of a Circle) Write a
+        program that reads in the radius of a circle as an integer and
+        prints the circle’s diameter, circumference and area. Use the
+        constant value 3.14159 for π. Do all calculations in output
+        statements. [Note: In this chapter, we’ve discussed only integer
+        constants and variables. In Chapter 4 we discuss floating-point
+        numbers, i.e., values that have decimal points.]
+
+ 15.    (Displaying Shapes with Asterisks) Write a program
+        that prints a box, an oval, an arrow and a diamond as follows:
+            *********         ***          *               *
+            *       *       *     *       ***            *   *
+            *       *      *       *     *****          *     *
+            *       *      *       *       *           *       *
+            *       *      *       *       *          *         *
+            *       *      *       *       *           *       *
+            *       *      *       *       *            *     *
+            *       *       *     *        *             *   *
+            *********         ***          *               *
+
+ 17.    (Largest and Smallest Integers) Write a program that
+        reads in five integers and determines and prints the largest and
+        the smallest integers in the group. Use only the programming
+        techniques you learned in this chapter.
+    
+ 18.    (Odd or Even) Write a program that reads an integer and
+        determines and prints whether it’s odd or even. [Hint: Use the
+        remainder operator (%). An even number is a multiple of two.
+        Any multiple of 2 leaves a remainder of zero when divided by 2.]
+
+ 19.    (Multiples) Write a program that reads in two integers and
+        determines and prints if the first is a multiple of the second.
+        [Hint: Use the remainder operator (%).]
+
+ 20.    (Checkerboard Pattern) Display the following
+        checkerboard pattern with eight output statements, then display
+        the same pattern using as few statements as possible.
+            * * * * * * * *
+             * * * * * * * *
+            * * * * * * * *
+             * * * * * * * *
+            * * * * * * * *
+             * * * * * * * *
+            * * * * * * * *
+             * * * * * * * *
+ 
+ 21.    (Integer Equivalent of a Character) Here is a peek
+        ahead. In this chapter you learned about integers and the type
+        int. C++ can also represent uppercase letters, lowercase
+        letters and a considerable variety of special symbols. C++ uses
+        small integers internally to represent each different character.
+        The set of characters a computer uses and the corresponding
+        integer representations for those characters are called that
+        computer’s character set. You can print a character by
+        enclosing that character in single quotes, as with
+             cout << 'A'; // print an uppercase A
+        You can print the integer equivalent of a character using
+        static_cast as follows:
+             cout << static_cast<int>('A'); // print 'A' as an integer
+        This is called a cast operation (we formally introduce casts in
+        Chapter 4). When the preceding statement executes, it prints
+        the value 65 (on systems that use the ASCII character set).
+        Write a program that prints the integer equivalent of a character
+        typed at the keyboard. Store the input in a variable of type
+        char. Test your program several times using uppercase letters,
+        lowercase letters, digits and special characters (such as $).
+
+ 22.    (Digits of an Integer) Write a program that inputs a five
+        digit integer, separates the integer into its digits and prints them
+        separated by three spaces each. [Hint: Use the integer division
+        and remainder operators.] For example, if the user types in
+        42339, the program should print:
+            4 2 3 3 9
+
+ 23.    (Table) Using the techniques of this chapter, write a
+        program that calculates the squares and cubes of the integers
+        from 0 to 10. Use tabs to print the following neatly formatted
+        table of values:
+
+        integer square cube
+        0       0      0
+        1       1      1
+        2       4      8
+        3       9      27
+        4       16     64
+        5       25     125
+        6       36     216
+        7       49     343
+        8       64     512
+        9       81     729
+        10      100    1000
+

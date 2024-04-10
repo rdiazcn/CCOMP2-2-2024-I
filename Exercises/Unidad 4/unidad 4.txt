@@ -1,0 +1,223 @@
+3.  (Gas Mileage) Drivers are concerned with the mileage
+    obtained by their automobiles. One driver has kept track of
+    several trips by recording miles driven and gallons used for
+    each trip. Develop a C++ program that uses a while statement
+    to input the miles driven and gallons used for each trip. The
+    program should calculate and display the miles per gallon
+    obtained for each trip and print the combined miles per gallon
+    obtained for all tankfuls up to this point.
+        Enter miles driven (-1 to quit): 287
+        Enter gallons used: 13
+        MPG this trip: 22.076923
+        Total MPG: 22.076923
+        Enter miles driven (-1 to quit): 200
+        Enter gallons used: 10
+        MPG this trip: 20.000000
+        Total MPG: 21.173913
+        Enter the miles driven (-1 to quit): 120
+        Enter gallons used: 5
+        MPG this trip: 24.000000
+        Total MPG: 21.678571
+        Enter the miles used (-1 to quit): -1
+
+4.  (Credit Limits) Develop a C++ program that will
+    determine whether a department-store customer has exceeded
+    the credit limit on a charge account. For each customer, the
+    following facts are available:
+        A. Account number (an integer)
+        B. Balance at the beginning of the month
+        C. Total of all items charged by this customer this month
+        D. Total of all credits applied to this customer's account this
+        month
+        E. Allowed credit limit
+    The program should use a while statement to input each of
+    these facts, calculate the new balance (= beginning balance +
+    charges – credits) and determine whether the new balance
+    exceeds the customer’s credit limit. For those customers whose
+    credit limit is exceeded, the program should display the
+    customer’s account number, credit limit, new balance and the
+    message “Credit Limit Exceeded.”
+        Enter account number (or -1 to quit): 100
+        Enter beginning balance: 5394.78
+        Enter total charges: 1000.00
+        Enter total credits: 500.00
+        Enter credit limit: 5500.00
+        New balance is 5894.78
+        Account:      100
+        Credit limit: 5500.00
+        Balance:      
+        5894.78
+        Credit Limit Exceeded.
+        Enter Account Number (or -1 to quit): 200
+        Enter beginning balance: 1000.00
+        Enter total charges: 123.45
+        Enter total credits: 321.00
+        Enter credit limit: 1500.00
+        New balance is 802.45
+        Enter Account Number (or -1 to quit): -1
+
+5.  (Sales-Commission Calculator) A large company pays
+    its salespeople on a commission basis. The salespeople each
+    receive $200 per week plus 9% of their gross sales for that
+    week. For example, a salesperson who sells $5000 worth of
+    chemicals in a week receives $200 plus 9% of $5000, or a total
+    of $650. Develop a C++ program that uses a while statement
+    to input each salesperson’s gross sales for last week and
+    calculates and displays that salesperson’s earnings. Process
+    one salesperson’s figures at a time.
+        Enter sales in dollars (-1 to end): 5000.00
+        Salary is: $650.00
+        Enter sales in dollars (-1 to end): 6000.00
+        Salary is: $740.00
+
+6.  (Salary Calculator) Develop a C++ program that uses a
+    while statement to determine the gross pay for each of several
+    employees. The company pays “straight time” for the first 40
+    hours worked by each employee and pays “time-and-a-half” for
+    all hours worked in excess of 40 hours. You are given a list of
+    the employees of the company, the number of hours each
+    employee worked last week and the hourly rate of each
+    employee. Your program should input this information for each
+    employee and should determine and display the employee’s
+    gross pay.
+        Enter hours worked (-1 to end): 39
+        Enter hourly rate of the employee ($00.00): 10.00
+        Salary is $390.00
+        Enter hours worked (-1 to end): 40
+        Enter hourly rate of the employee ($00.00): 10.00
+        Salary is $400.00
+        Enter hours worked (-1 to end): 41
+        Enter hourly rate of the employee ($00.00): 10.00
+        Salary is $415.00
+        Enter hours worked (-1 to end): -1
+
+7.  (Find the Largest) The process of finding the largest
+    number (i.e., the maximum of a group of numbers) is used
+    frequently in computer applications. For example, a program
+    that determines the winner of a sales contest inputs the number
+    of units sold by each salesperson. The salesperson who sells
+    the most units wins the contest. Write a C++ program that uses
+    a while statement to determine and print the largest of 10
+    numbers input by the user. Your program should use three
+    variables, as follows:
+        A. counter—A counter to count to 10 (i.e., to keep track of
+        how many numbers have been input and to determine
+        when all 10 numbers have been processed).
+        B. number—The current number input to the program.
+        C. largest—The largest number found so far
+    
+8.  (Tabular Output) Write a C++ program that uses a while
+    statement and the tab escape sequence \t to print the
+    following table of values:
+        N       10*N    100*N   1000*N
+        1       10      100     1000
+        2       20      200     2000
+        3       30      300     3000
+        4       40      400     4000
+        5       50      500     5000
+
+9.  (Find the Two Largest Numbers) Using an approach
+    similar to that in Exercise 4.17, find the two largest values
+    among the 10 numbers. [Note: You must input each number
+    only once.]
+
+10. (Validating User Input) The examination-results program
+    of Fig. 4.14 assumes that any value input by the user that’s not
+    a 1 must be a 2. Modify the application to validate its inputs. On
+    any input, if the value entered is other than 1 or 2, keep looping
+    until the user enters a correct value.
+
+16. (Square of Asterisks) Write a program that reads in the
+    size of the side of a square, then prints a hollow square of that
+    size out of asterisks and blanks. Your program should work for
+    squares of all side sizes between 1 and 20. For example, if
+    your program reads a size of 5, it should print
+        *****
+        *   *
+        *   *
+        *   *
+        *****
+
+17. (Palindromes) A palindrome is a number or a text phrase
+    that reads the same backward as forward. For example, each
+    of the following five-digit integers is a palindrome: 12321,
+    55555, 45554 and 11611. Write a program that reads in a five
+    digit integer and determines whether it’s a palindrome. [Hint:
+    Use the division and remainder operators to separate the
+    number into its individual digits.]
+
+18. (Printing the Decimal Equivalent of a Binary Number)
+    Input an integer containing only 0s and 1s (i.e., a “binary”
+    integer) and print its decimal equivalent. Use the remainder and
+    division operators to pick off the “binary” number’s digits one at
+    a time from right to left. Much as in the decimal number system,
+    where the rightmost digit has a positional value of 1, the next
+    digit left has a positional value of 10, then 100, then 1000, and
+    so on, in the binary number system the rightmost digit has a
+    positional value of 1, the next digit left has a positional value of
+    2, then 4, then 8, and so on. Thus the decimal number 234 can
+    be interpreted as 2 * 100 + 3 * 10 + 4 * 1. The decimal
+    equivalent of binary 1101 is 1 * 1 + 0 * 2 + 1 * 4 + 1 * 8 or 1 + 0
+    + 4 + 8, or 13. [Note: To learn more about binary numbers,
+    refer to Appendix D.]
+
+19. (Checkerboard Pattern of Asterisks) Write a program
+    that displays the following checkerboard pattern. Your program
+    must use only three output statements, one of each of the
+    following forms:
+        cout << "* ";
+        cout << ' ';
+        cout << endl;
+        * * * * * * * *
+         * * * * * * * *
+        * * * * * * * *
+         * * * * * * * *
+        * * * * * * * *
+         * * * * * * * *
+        * * * * * * * *
+         * * * * * * * *
+
+20. (Multiples of 2 with an Infinite Loop) Write a program
+    that prints the powers of the integer 2, namely 2, 4, 8, 16, 32, 64, etc. 
+    Your while loop should not terminate (i.e., you should
+    create an infinite loop). To do this, simply use the keyword true
+    as the expression for the  while statement. What happens when
+    you run this program?
+
+21. (Calculating a Circle’s Diameter, Circumference and
+    Area) Write a program that reads the radius of a circle (as a
+    double value) and computes and prints the diameter, the
+    circumference and the area. Use the value 3.14159 for π.
+
+23. (Sides of a Triangle) Write a program that reads three
+    nonzero double values and determines and prints whether they
+    could represent the sides of a triangle
+
+24. (Sides of a Right Triangle) Write a program that reads
+    three nonzero integers and determines and prints whether
+    they’re the sides of a right triangle.
+
+25. (Factorial) The factorial of a nonnegative integer n is
+    written n! (pronounced “n factorial”) and is defined as follows:
+        n! = n * (n-1) * (n-2) ... * 1
+        n! = 1 (for n=0 or n=1).
+    For example, 5! = 5 * 4 * 3 * 2 * 1  , which is 120. Use while
+    statements in each of the following:
+        A. Write a program that reads a nonnegative integer and
+        computes and prints its factorial.
+        B. Write a program that estimates the value of the
+        mathematical constant e by using the formula:
+                     1     1     1    
+            e = 1 + --- + --- + --- + ...
+                     1!    2!    3!
+        Prompt the user for the desired accuracy of e (i.e., the
+        number of terms in the summation).
+        C. Write a program that computes the value of  by using
+        the formula
+                     x    x^2   x^3    
+            e = 1 + --- + --- + --- + ...
+                     1!    2!    3!
+        Prompt the user for the desired accuracy of e (i.e., the
+        number of terms in the summation).
+
+ 
