@@ -7,41 +7,9 @@ class Date {
     public:
         explicit Date(int d, int m, int y):
         day{d}, month{m}, year{y} {
-
-            if(y>= 1900 && y <=2050) 
-                year = y;
-            else
-                year = 1900;
-
-            if(m >= 1 && m <= 12) 
-                month = m;
-            else
-                month = 1;
-            
-            if (d>=1){
-                switch(month) {
-                    case 2:
-                        if (d>=1){
-                            if (isLeapYear() && d==29)
-                                day = d;
-                            else if (!isLeapYear() && d <=28)
-                                day = d;
-                        }
-                        break;
-
-                    case 4: case 6: case 9: case 11:
-                        if (d > 30)
-                            day=1;
-                        break;
-
-                    default:
-                        if (d > 31)
-                            day=1;
-                        break;
-                }
-            }
-            else
-                day = 1;  
+            setDay(d);
+            setMonth(m);
+            setYear(y);
         }
 
         bool isLeapYear() const{
@@ -69,25 +37,27 @@ class Date {
         }
 
         void setDay(int d){
-            if (d>=1){
+            if (d>=1 && d<=31){
                 switch(month) {
                     case 2:
-                        if (d>=1){
-                            if (isLeapYear() && d==29)
-                                day = d;
-                            else if (!isLeapYear() && d <=28)
-                                day = d;
-                        }
-                        break;
-
+                         if (isLeapYear() && d<=29)
+                            day = d;
+                         else if (!isLeapYear() && d <=28)
+                            day = d;
+                        else
+                            day = 1;
+                            break;
                     case 4: case 6: case 9: case 11:
                         if (d > 30)
                             day=1;
+                        else
+                            day=d;
                         break;
-
-                    default:
+                    case 1: case 3: case 5: case 7: case 8: case 10: case 12:
                         if (d > 31)
                             day=1;
+                        else
+                            day=d;
                         break;
                 }
             }
