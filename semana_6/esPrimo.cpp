@@ -15,13 +15,16 @@ bool esPrimo(int n) {
 }
 
 void printPrimo(int n){
-    for (int i = 0; i<= n; i++){
+    for (int i = 2; i<= n; i++){
         if (esPrimo(i))
-            cout<<i<<" es primo.\n"
+            cout<<i<<" es primo.\n";
+        else
+            cout<<i<<" no es primo.\n";
     }
     
 }
 
 int main(){
-
+    int num = 10;
+    printPrimo(10);
 }
