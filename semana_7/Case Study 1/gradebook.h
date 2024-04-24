@@ -8,19 +8,19 @@ class GradeBook {
         
         static const size_t students{10};
 
-        GradeBook(const std::string& name,
-            const std::array<int, students>& gradesArray)
+        GradeBook(const std::string& name, 
+        const std::array<int, students>& gradesArray)
             : courseName{name}, grades{gradesArray} { 
             }
             
-            void setCourseName(const std::string& name) {
+            const void setCourseName(const std::string& name) {
                 courseName = name;
             }
 
             const std::string& getCourseName() const{
                 return courseName;
             }
-
+            
             void displayMessage() const{
                 std::cout << "Welcome to the grade book for\n" << getCourseName()
                     <<"!"<<std::endl;
