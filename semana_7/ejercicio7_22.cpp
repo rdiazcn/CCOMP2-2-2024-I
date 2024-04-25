@@ -18,27 +18,35 @@ void moveType(int moveType, int& cR, int& cC){
         case 0:
             cC = 2;
             cR = -1;
+            break;
         case 1:
             cC = 1;
             cR = -2;
+            break;
         case 2:
             cC = -1;
             cR = -2;
+            break;
         case 3:
             cC = -2;
             cR = -1;
+            break;
         case 4:
             cC = -2;
             cR = 1;
+            break;
         case 5:
             cC = -1;
             cR = 2;
+            break;
         case 6:
             cC = 1;
             cR = 2;
+            break;
         case 7:
             cC = 2;
             cR = 1;
+            break;
     }
 }
 
