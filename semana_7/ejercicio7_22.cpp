@@ -57,11 +57,8 @@ int main(){
     int currentColumn{0};
 
     moveType(0, currentRow, currentColumn);
-    
-    cout<<currentRow<<" "<<currentColumn<<endl;
-    /*for (int i=0; i<64; ++i){
-        
-    }*/
+    cout<<currentRow<< " " << currentColumn<<endl;
+
     outputBoard(board);
     return 0;
 

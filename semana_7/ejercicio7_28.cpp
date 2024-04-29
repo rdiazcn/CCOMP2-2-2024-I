@@ -1,11 +1,33 @@
-/* Another puzzler for chess buffs is the Eight Queens problem. Simply stated:
-Is it possible to place eight queens on an empty chessboard so that no queen is “attacking” any other,
-i.e., no two queens are in the same row, the same column, or along the same diagonal? Use the thinking developed in Exercise 7.22 to formulate 
-a heuristic for solving the Eight Queens problem. Run
-your program. [Hint: It’s possible to assign a value to each square of the chessboard indicating how
-many squares of an empty chessboard are “eliminated” if a queen is placed in that square. Each of
-the corners would be assigned the value 22, as in Fig. 7.26. Once these “elimination numbers” are
-the smallest elimination number. Why is this strategy intuitively appealing?]
-*/
+#include <iostream>
+#include <string>
+using namespace std;
 
-#include <array>
+
+bool isPalindrome(string s, int l, int r) {
+	if (l > r) {
+		return true;
+	}
+	else {
+
+		if (s[l] == s[r]) 
+            return isPalindrome(s, l + 1, r - 1);
+		else if (s[l]==' ') 
+            return isPalindrome(s, l + 1, r);
+		else if(s[r]==' ') 
+            return isPalindrome(s, l, r-1);
+	}
+
+	return false;
+}
+
+int main()
+{
+    cout<<"Ingrese la cadena: ";
+	string s{""};
+	getline(cin, s);
+
+	if (isPalindrome(s, 0, s.length() - 1)) 
+        cout << "'" << s << "': es un palindrome" << endl;
+	else 
+        cout << "'" << s << "': no es un palindrome" << endl;
+}
